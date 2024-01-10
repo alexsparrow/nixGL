@@ -84,7 +84,7 @@ let
         });
 
       nvidiaLibsOnly = nvidiaDrivers.override {
-        libsOnly = true;
+        libsOnly = false;
         kernel = null;
       };
 
