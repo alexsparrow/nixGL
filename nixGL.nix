@@ -85,7 +85,7 @@ let
 
       nvidiaLibsOnly = nvidiaDrivers.override {
         libsOnly = false;
-        kernel = null;
+        kernel = linuxPackages.kernel;
       };
 
       nixGLNvidiaBumblebee = writeExecutable {
